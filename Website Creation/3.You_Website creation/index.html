@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; 
+        }
+        header {
+            background-color: #333; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apple Company</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="iphone.jpg" alt="iPhone">
+            <h2>iPhone</h2>
+            <p>The iPhone is a line of smartphones designed and marketed by Apple Inc. It runs Apple's iOS mobile operating system.</p>
+        </div>
+        <div class="product">
+            <img src="macbook.jpg" alt="MacBook">
+            <h2>MacBook</h2>
+            <p>The MacBook is a line of Macintosh notebook computers designed and marketed by Apple Inc. It consists of a full-size keyboard, a machined aluminum case, and a thin light structure.</p>
+        </div>
+        <div class="product">
+            <img src="ipad.jpg" alt="iPad">
+            <h2>iPad</h2>
+            <p>The iPad is a line of tablet computers designed, developed, and marketed by Apple Inc. It features a touch screen and is primarily used for internet browsing, media playback, and light computing tasks.</p>
+        </div>
+        <form>
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Apple Company. All rights reserved.
+    </footer>
+</body>
+</html>

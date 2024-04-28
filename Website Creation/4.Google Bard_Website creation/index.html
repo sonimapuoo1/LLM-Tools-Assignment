@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Apple</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Explore Apple Products</h2>
+            <div class="product-container">
+                <article class="product">
+                    <img src="images/iphone.jpg" alt="iPhone">
+                    <h3>iPhone</h3>
+                    <p>The most powerful smartphone on the planet.</p>
+                    <button onclick="showDetails('iphone')">Learn More</button>
+                    <div class="details" id="iphoneDetails">
+                        <h4>iPhone Features</h4>
+                        <ul>
+                            <li>Super Retina XDR display</li>
+                            <li>A15 Bionic chip</li>
+                            <li>Advanced camera system</li>
+                            <li>Incredible battery life</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img src="images/macbook.jpg" alt="Macbook">
+                    <h3>Macbook</h3>
+                    <p>The ultimate laptop for work and play.</p>
+                    <button onclick="showDetails('macbook')">Learn More</button>
+                    <div class="details" id="macbookDetails">
+                        <h4>Macbook Features</h4>
+                        <ul>
+                            <li>Stunning Retina display</li>
+                            <li>M1 chip for incredible performance</li>
+                            <li>Long-lasting battery</li>
+                            <li>macOS Monterey operating system</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Stay Connected</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showDetails(productId) {
+            const details = document.getElementById(`${productId}Details`);
+            details.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

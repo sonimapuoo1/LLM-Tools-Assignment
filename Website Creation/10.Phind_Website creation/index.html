@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Apple</h1>
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="images/hero.jpg" alt="Apple Products">
+      <h2>Think Different.</h2>
+      <p>Welcome to the world of Apple. Explore our innovative products designed to simplify your life.</p>
+      <button class="explore-btn">Explore Products</button>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Products</h2>
+      <div class="product-grid">
+        <article class="product">
+          <img src="images/iphone.jpg" alt="iPhone">
+          <h3>iPhone</h3>
+          <p>The smartest and most powerful smartphones on the planet.</p>
+          <button class="product-details">Learn More</button>
+          <form class="product-form">
+            <h4>Pre-order Now</h4>
+            <input type="text" placeholder="Your Email">
+            <button type="submit">Pre-order</button>
+          </form>
+        </article>
+
+        <article class="product">
+          <img src="images/mac.jpg" alt="Mac">
+          <h3>Mac</h3>
+          <p>The world's most powerful desktop computers.</p>
+          <button class="product-details">Learn More</button>
+          <form class="product-form">
+            <h4>Shop Now</h4>
+            <select name="model">
+              <option value="macbookpro">MacBook Pro</option>
+              <option value="macbookair">MacBook Air</option>
+              <option value="imac">iMac</option>
+            </select>
+            <button type="submit">Shop Now</button>
+          </form>
+        </article>
+
+        <article class="product">
+          <img src="images/ipad.jpg" alt="iPad">
+          <h3>iPad</h3>
+          <p>Your versatile companion for work, play, and creativity.</p>
+          <button class="product-details">Learn More</button>
+          <form class="product-form">
+            <h4>Compare Models</h4>
+            <input type="radio" name="ipad" id="ipad-pro" value="pro">
+            <label for="ipad-pro">iPad Pro</label>
+            <input type="radio" name="ipad" id="ipad-air" value="air">
+            <label for="ipad-air">iPad Air</label>
+            <button type="submit">Compare</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
