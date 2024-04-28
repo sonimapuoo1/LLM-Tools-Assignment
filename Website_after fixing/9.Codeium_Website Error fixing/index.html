@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title> <!-- Updated page title -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <button id="contact-btn">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <img src="images/iphone.jpg" alt="iPhone">
+            <h2>iPhone</h2>
+            <p>The world's most powerful smartphone. Supercharged by the A15 Bionic chip for incredible performance. A beautiful 6.1-inch Super Retina XDR display. And an advanced dual-camera system that captures stunning photos and videos.</p>
+            <button class="learn-more">Learn More</button>
+            <div class="details">
+                <h3>Display</h3>
+                <p>6.1-inch Super Retina XDR display</p>
+                <h3>Processor</h3>
+                <p>A15 Bionic chip</p>
+                <h3>Camera</h3>
+                <p>Dual-camera system with 12MP wide and ultrawide cameras</p>
+            </div>
+        </section>
+        <section class="product">
+            <img src="images/macbook.jpg" alt="MacBook">
+            <h2>MacBook Pro</h2>
+            <p>With the powerful M1 Pro or M1 Max chip, the new MacBook Pro is faster and more capable than ever. Featuring a stunning 14-inch or 16-inch Liquid Retina XDR display, incredible battery life, and a studio-quality six-speaker sound system.</p>
+            <button class="learn-more">Learn More</button>
+            <div class="details">
+                <h3>Display</h3>
+                <p>14-inch or 16-inch Liquid Retina XDR display</p>
+                <h3>Chip</h3>
+                <p>M1 Pro or M1 Max chip</p>
+                <h3>Battery</h3>
+                <p>Up to 21 hours of battery life</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+    </footer>
+    <div id="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>
